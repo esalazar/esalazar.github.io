@@ -1,0 +1,12 @@
+title:  Edgar M. Salazar
+tagline: The personal site for Edgar M. Salazar
+url:  http://edgarmsalazar.com
+
+baseurl:  /
+author:
+  name: Edgar M. Salazar
+  url: edgarmsalazar.com
+
+sass:
+  sass_dir: /assets/_sass
+  style: compressed
