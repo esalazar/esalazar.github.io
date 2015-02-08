@@ -1,4 +1,67 @@
+$font-family: Helvetica, sans-serif;
+$primary-color: #eee;
+$o-primary-color: #111;
+$accent-color: #red;
+$subaccent-color: #orange;
+$background-color: #222;
+$o-background-color: #ddd;
+$border-color: #aaa;
+$o-border-color: #aaa;
+
+/* Overall */
 body {
-  background-color: #222;
-  color: #fff;
+  font: 100% $font-family;
+  background-color: $background-color;
+  color: $primary-color;
 }
+
+a {
+  font-weight: bold;
+  color: $accent-color;
+  &:hover {
+    color: $subaccent-color;
+  }
+}
+
+/* Components */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.xs {
+  font-size: 50%;
+}
+
+.sm {
+  font-size: 75%;
+}
+
+.lg {
+  font-size: 125%;
+}
+
+.xl {
+  font-size: 150%;
+}
+
+/* Header */
+.header {
+  .title {
+    font-size: 200%;
+  }
+}
+
+/* Footer */
+.footer {
+}
+
+/* Index */
+#page_title {
+}
+

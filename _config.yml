@@ -1,5 +1,4 @@
 title:  Edgar M. Salazar
-tagline: The personal site for Edgar M. Salazar
 url:  http://edgarmsalazar.com
 
 baseurl:  /
@@ -10,3 +9,7 @@ author:
 sass:
   sass_dir: /assets/_sass
   style: compressed
+
+exclude:
+  - Gemfile
+  - README.md
