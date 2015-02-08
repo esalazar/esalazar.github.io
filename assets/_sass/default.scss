@@ -1,8 +1,8 @@
 $font-family: Helvetica, sans-serif;
 $primary-color: #eee;
 $o-primary-color: #111;
-$accent-color: #red;
-$subaccent-color: #orange;
+$accent-color: #BC2208;
+$subaccent-color: #E14120;
 $background-color: #222;
 $o-background-color: #ddd;
 $border-color: #aaa;
@@ -16,9 +16,14 @@ body {
 }
 
 a {
-  font-weight: bold;
   color: $accent-color;
-  &:hover {
+  text-decoration: none;
+  outline: 0;
+  &:visited {
+    color: $accent-color;
+  }
+  &:hover, &:focus, &:active {
+    font-weight: bold;
     color: $subaccent-color;
   }
 }
