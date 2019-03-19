@@ -13,3 +13,4 @@ sass:
 exclude:
   - Gemfile
   - README.md
+  - vendor

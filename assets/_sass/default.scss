@@ -1,16 +1,14 @@
-$font-family: Helvetica, sans-serif;
+$font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #eee;
 $o-primary-color: #111;
 $accent-color: #BC2208;
 $subaccent-color: #E14120;
 $background-color: #222;
 $o-background-color: #ddd;
-$border-color: #aaa;
-$o-border-color: #aaa;
 
 /* Overall */
 body {
-  font: 100% $font-family;
+  font-family: $font-family;
   background-color: $background-color;
   color: $primary-color;
 }
@@ -23,43 +21,18 @@ a {
     color: $accent-color;
   }
   &:hover, &:focus, &:active {
-    font-weight: bold;
     color: $subaccent-color;
   }
 }
 
 /* Components */
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center-text {
+.text-center {
   text-align: center;
-}
-
-.xs {
-  font-size: 50%;
-}
-
-.sm {
-  font-size: 75%;
-}
-
-.lg {
-  font-size: 125%;
-}
-
-.xl {
-  font-size: 150%;
 }
 
 /* Header */
 .header {
-  .title {
-    font-size: 200%;
-  }
+  margin: 2em 0;
 }
 
 /* Footer */
@@ -67,6 +40,46 @@ a {
 }
 
 /* Index */
-#page_title {
-}
+#index_page {
+  .logo {
+    margin: 1em;
+  }
 
+  .links {
+    margin: .5em 0;
+    padding: .5em 0;
+  }
+
+  .circle {
+    margin: 0 auto;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    display: inline-block;
+    animation: backgroundCircle 6s ease-in-out infinite;
+  }
+
+  .circle-hidden {
+    margin: 2.5em auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .circle:hover > .circle-hidden {
+    animation: backgroundCircle 2s ease-in-out infinite;
+  }
+
+  @keyframes backgroundCircle {
+    0% {
+      background-color: $background-color;
+    }
+    50% {
+      background-color: $accent-color;
+    }
+    100% {
+      background-color: $background-color;
+    }
+  }
+}
