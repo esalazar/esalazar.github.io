@@ -1,16 +1,26 @@
 $font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #eee;
 $o-primary-color: #111;
-$accent-color: #BC2208;
-$subaccent-color: #E14120;
+$accent-color: #E14120;
+$subaccent-color: #BC2208;
 $background-color: #222;
-$o-background-color: #ddd;
+$o-background-color: #eee;
 
 /* Overall */
 body {
   font-family: $font-family;
   background-color: $background-color;
   color: $primary-color;
+  padding: 1em;
+}
+
+.container {
+  border-right: .1em solid $o-background-color;
+  border-left: .1em solid $o-background-color;
+}
+
+.page {
+  border-bottom: .1em solid $o-background-color;
 }
 
 a {
@@ -32,30 +42,20 @@ a {
 
 /* Header */
 .header {
-  margin: 2em 0;
-}
+  border-top: .1em solid $o-background-color;
 
-/* Footer */
-.footer {
-}
-
-/* Index */
-#index_page {
   .logo {
-    margin: 1em;
-  }
-
-  .links {
-    margin: .5em 0;
-    padding: .5em 0;
+    display: block;
+    margin: .5em;
   }
 
   .circle {
-    margin: 0 auto;
+    display: block;
+    float: right;
+    margin: 4em;
     width: 6em;
     height: 6em;
     border-radius: 50%;
-    display: inline-block;
     animation: backgroundCircle 6s ease-in-out infinite;
   }
 
@@ -81,5 +81,32 @@ a {
     100% {
       background-color: $background-color;
     }
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 1em;
+}
+
+/* Index */
+#index_page {
+  .links {
+    padding: 1em 0;
+  }
+}
+
+
+/* Media Queries */
+
+/* Mobile & Phablets */
+@media (max-width: 550px) {
+  .header {
+    text-align: center;
+    float: none;
+  }
+  .circle {
+    float: none !important;
+    margin: 0 auto !important;
   }
 }
