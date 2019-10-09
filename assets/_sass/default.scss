@@ -45,14 +45,13 @@ a {
   border-top: .1em solid $o-background-color;
 
   .logo {
-    display: block;
-    margin: .5em;
+    margin: 1em;
   }
 
   .circle {
     display: block;
     float: right;
-    margin: 4em;
+    margin: 4em 1em;
     width: 6em;
     height: 6em;
     border-radius: 50%;
@@ -101,10 +100,11 @@ a {
 
 /* Mobile & Phablets */
 @media (max-width: 550px) {
-  .header {
+  .logo {
     text-align: center;
-    float: none;
+    margin: 0 !important;
   }
+
   .circle {
     float: none !important;
     margin: 0 auto !important;
